@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social Component Should show match Social DOM Snapshot 1`] = `
+<div>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-m7rsiw-MuiSvgIcon-root"
+    focusable="false"
+    href="/#"
+    viewBox="0 0 24 24"
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g>
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+        />
+      </g>
+    </svg>
+  </svg>
+</div>
+`;

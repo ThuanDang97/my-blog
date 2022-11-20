@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Widget component should render Widget component 1`] = `
+<div>
+  <aside
+    class="MuiBox-root css-9lsm0f"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h2 css-w1deiu-MuiTypography-root"
+      data-testid="widget-title"
+    >
+      Categories
+    </h2>
+    <ul
+      class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+    >
+      <li
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
+        data-testid="widget-item"
+      >
+        <a
+          href="/python"
+        >
+          Python
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
+        data-testid="widget-item"
+      >
+        <a
+          href="/javascript"
+        >
+          JavaScript
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
+        data-testid="widget-item"
+      >
+        <a
+          href="/nextjs"
+        >
+          NextJS
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
+        data-testid="widget-item"
+      >
+        <a
+          href="/front-end"
+        >
+          Front-End
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
+        data-testid="widget-item"
+      >
+        <a
+          href="/linux"
+        >
+          Linux
+        </a>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
+        data-testid="widget-item"
+      >
+        <a
+          href="/css"
+        >
+          CSS
+        </a>
+      </li>
+    </ul>
+  </aside>
+</div>
+`;
