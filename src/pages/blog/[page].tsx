@@ -138,7 +138,7 @@ const PageBlogList = ({
               </Button>
               <Button
                 variant="contained"
-                endIcon={<ArrowBackIcon />}
+                startIcon={<ArrowBackIcon />}
                 sx={{
                   width: '45%',
                   display: 'flex',

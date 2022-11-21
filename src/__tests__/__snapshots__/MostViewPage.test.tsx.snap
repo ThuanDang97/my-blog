@@ -262,9 +262,8 @@ exports[`Page Most View Page Most View matches DOM Snapshot 1`] = `
             tabindex="0"
             type="button"
           >
-            Newer posts
             <span
-              class="MuiButton-endIcon MuiButton-iconSizeMedium css-9tj150-MuiButton-endIcon"
+              class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
             >
               <svg
                 aria-hidden="true"
@@ -278,6 +277,7 @@ exports[`Page Most View Page Most View matches DOM Snapshot 1`] = `
                 />
               </svg>
             </span>
+            Newer posts
             <span
               class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
             />
