@@ -1,6 +1,8 @@
-import Footer from '@layouts/Footer'
 import Head from 'next/head'
 import { ReactNode } from 'react'
+
+// Layouts
+import Footer from '@layouts/Footer'
 
 export interface IPageLayout {
   children: ReactNode

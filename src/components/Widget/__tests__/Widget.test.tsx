@@ -17,17 +17,21 @@ describe('Widget component', () => {
 
     expect(container).toMatchSnapshot()
 
-    const title = screen.getByTestId('widget-title')
+    const title = screen.getByRole('heading', {
+      name: /Categories/i,
+    })
     expect(title).toHaveTextContent('Categories')
   })
 
   it('should render correct widget item', () => {
     render(<Widget {...mockProps} />)
 
-    const link = screen.getAllByTestId('widget-item')
+    const link = screen.getByRole('link', {
+      name: /Python/i,
+    })
     const links = screen.getAllByRole('link')
 
-    expect(link[0]).toHaveTextContent('Python')
+    expect(link).toHaveTextContent('Python')
     expect(links[0].getAttribute('href')).toEqual('/python')
   })
 })

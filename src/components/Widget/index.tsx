@@ -20,22 +20,20 @@ export interface IWidget extends BoxProps {
 }
 const Widget = ({ title = 'Title', widgetsItem, ...props }: IWidget) => {
   const theme = useTheme()
+
   return (
     <Box
       component="aside"
       sx={{
-        border: '1px solid #EAEBED',
+        border: `1px solid ${theme.palette.grey[400]}`,
         padding: '25px',
         marginBottom: '50px',
         position: 'relative',
-        clear: 'both',
-        float: 'left',
         width: '100%',
       }}
       {...props}
     >
       <Typography
-        data-testid="widget-title"
         variant="h2"
         sx={{
           fontSize: '25px',
@@ -43,7 +41,7 @@ const Widget = ({ title = 'Title', widgetsItem, ...props }: IWidget) => {
           textTransform: 'capitalize',
           fontWeight: 600,
           top: '-17px',
-          background: '#fff',
+          background: theme.palette.common.white,
           marginLeft: '-26px',
           display: 'inline-block',
           paddingRight: '30px',
@@ -54,17 +52,18 @@ const Widget = ({ title = 'Title', widgetsItem, ...props }: IWidget) => {
       <List>
         {widgetsItem.map((item) => (
           <ListItem
-            data-testid="widget-item"
             key={item.slug}
             sx={{
-              fontSize: '16px',
-              fontWeight: 'bold',
+              fontSize: '14px',
+              fontWeight: 500,
               ':hover': {
                 color: theme.palette.grey[500],
               },
             }}
           >
-            <Link href={`/${item.slug}`}>{item.name}</Link>
+            <Link href={`/${item.slug}`} prefetch={false}>
+              {item.name}
+            </Link>
           </ListItem>
         ))}
       </List>

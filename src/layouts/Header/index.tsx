@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container, Typography, useTheme } from '@mui/material'
 import { memo } from 'react'
 
 // Constants
@@ -16,9 +16,11 @@ export interface IHeader {
 }
 
 const Header = ({ pageTitle = 'Title', breadCrumbs = [] }: IHeader) => {
+  const theme = useTheme()
+
   return (
     <Box component="header" marginBottom="50px">
-      <Box paddingTop="20px" bgcolor="#F5F6FA">
+      <Box paddingTop="20px" bgcolor={theme.palette.grey[100]}>
         <Container
           maxWidth="lg"
           sx={{
@@ -40,7 +42,7 @@ const Header = ({ pageTitle = 'Title', breadCrumbs = [] }: IHeader) => {
       {breadCrumbs.length > 0 && (
         <Box
           paddingTop="20px"
-          bgcolor="#F5F6FA"
+          bgcolor={theme.palette.grey[100]}
           sx={{
             paddingTop: '100px',
           }}
@@ -52,7 +54,7 @@ const Header = ({ pageTitle = 'Title', breadCrumbs = [] }: IHeader) => {
               variant="h2"
               letterSpacing="2px"
               fontWeight={800}
-              color="#D4D5D9"
+              color={theme.palette.grey[400]}
               marginTop="40px"
               textTransform="uppercase"
               fontSize="48px"

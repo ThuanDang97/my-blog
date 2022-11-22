@@ -20,7 +20,7 @@ exports[`Logo Component Should show match Logo DOM Snapshot 1`] = `
         width="1280"
       />
       <div
-        class="MuiBox-root css-4cbsy1"
+        class="MuiBox-root css-1dzd2um"
       >
         <h2
           class="MuiTypography-root MuiTypography-h2 css-1r4hp4x-MuiTypography-root"

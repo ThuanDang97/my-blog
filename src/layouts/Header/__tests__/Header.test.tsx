@@ -1,6 +1,17 @@
 import { cleanup, render, screen } from '@utils/testUtils'
 import Header, { IHeader } from '..'
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '',
+      query: '',
+      asPath: '',
+    }
+  },
+}))
+
 describe('Header layouts', () => {
   afterEach(cleanup)
 

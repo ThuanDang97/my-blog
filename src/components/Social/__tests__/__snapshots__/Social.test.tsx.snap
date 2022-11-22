@@ -4,7 +4,7 @@ exports[`Social Component Should show match Social DOM Snapshot 1`] = `
 <div>
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-m7rsiw-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-121t1nn-MuiSvgIcon-root"
     focusable="false"
     href="/#"
     viewBox="0 0 24 24"

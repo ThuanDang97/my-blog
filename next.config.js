@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  forceSwcTransforms: true,
   images: {
     remotePatterns: [
       {
@@ -11,6 +10,20 @@ const nextConfig = {
         port: '',
       },
     ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/:all*',
+        locale: false,
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=31536000, stale-while-revalidate=59',
+          },
+        ],
+      },
+    ]
   },
 }
 

@@ -1,5 +1,5 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useTheme } from '@mui/material'
 import Image from 'next/image'
 import Link from 'next/link'
 import { memo } from 'react'
@@ -22,6 +22,8 @@ const CardPost = ({
   view,
   href,
 }: ICardPost) => {
+  const theme = useTheme()
+
   return (
     <Box component="article" marginBottom="50px" width="100%">
       <Box component="figure" marginBottom="15px" overflow="hidden">
@@ -37,7 +39,7 @@ const CardPost = ({
         />
         <Box
           padding="40px 40px 20px"
-          bgcolor="rgba(243, 245, 249, 0.85)"
+          bgcolor={theme.palette.grey[100]}
           marginTop="-76px"
           zIndex={1}
           width="85%"

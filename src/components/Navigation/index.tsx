@@ -2,6 +2,8 @@ import { Box, List, ListItem, SvgIcon, useTheme } from '@mui/material'
 import Link from 'next/link'
 import { lazy, memo, Suspense, useState } from 'react'
 import SearchIcon from '@mui/icons-material/Search'
+
+// Components
 import Button from '@components/Button'
 
 const Search = lazy(() => import('@components/Search'))
@@ -44,7 +46,7 @@ const Navigation = ({ navItems }: INavigation) => {
         padding="12px 12px 12px 25px"
         width="100%"
         alignItems="center"
-        boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+        boxShadow={`${theme.palette.grey[400]} 0px 3px 8px`}
         bgcolor={theme.palette.common.white}
       >
         <List
@@ -68,7 +70,9 @@ const Navigation = ({ navItems }: INavigation) => {
                 },
               }}
             >
-              <Link href={item.path}>{item.name}</Link>
+              <Link href={item.path} prefetch={false}>
+                {item.name}
+              </Link>
             </ListItem>
           ))}
         </List>

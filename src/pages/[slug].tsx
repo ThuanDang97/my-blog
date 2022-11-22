@@ -19,6 +19,7 @@ import Button from '@components/Button'
 
 // Types
 import { IPostDetail } from '@self-types/PostDetail.types'
+import { BlogProps } from '@self-types/BlogProps.types'
 
 const Image = lazy(() => import('next/image'))
 
@@ -59,7 +60,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     await getDataContent({
       typeContent: 'blogPost',
       order: '-sys.createdAt',
-      limitResults: 1,
+      limit: 1,
       query: {
         'sys.createdAt[lt]': `${response.map((item) => item.sys.createdAt)}`,
       },
@@ -69,7 +70,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     await getDataContent({
       typeContent: 'blogPost',
       order: 'sys.createdAt',
-      limitResults: 1,
+      limit: 1,
       query: {
         'sys.createdAt[gt]': `${response.map((item) => item.sys.createdAt)}`,
       },
@@ -93,33 +94,27 @@ const PostDetail = ({
   const router = useRouter()
 
   // Current Post
-  const post = recipe.map(
-    (item: InferGetStaticPropsType<typeof getStaticProps>) => item.fields,
-  )
+  const post = recipe.map((item: BlogProps) => item.fields)
 
   // Previous Post
-  const previousPost = previous.map(
-    (postItem: InferGetStaticPropsType<typeof getStaticProps>) => {
-      const path = postItem.fields as unknown as { title: string; slug: string }
+  const previousPost = previous.map((postItem: BlogProps) => {
+    const path = postItem.fields as unknown as { title: string; slug: string }
 
-      return {
-        name: path.title,
-        href: path.slug,
-      }
-    },
-  )
+    return {
+      name: path.title,
+      href: path.slug,
+    }
+  })
 
   // Next Post
-  const nextPost = next.map(
-    (postItem: InferGetStaticPropsType<typeof getStaticProps>) => {
-      const path = postItem.fields as unknown as { title: string; slug: string }
+  const nextPost = next.map((postItem: BlogProps) => {
+    const path = postItem.fields as unknown as { title: string; slug: string }
 
-      return {
-        name: path.title,
-        href: path.slug,
-      }
-    },
-  )
+    return {
+      name: path.title,
+      href: path.slug,
+    }
+  })
 
   const handleGetOlderPosts = useCallback(() => {
     router.push(`/${previousPost[0].href}`)
@@ -164,7 +159,7 @@ const PostDetail = ({
                 <Box display="flex" width="100%" justifyContent="space-between">
                   <Button
                     variant="contained"
-                    endIcon={<ArrowForwardIcon />}
+                    startIcon={<ArrowBackIcon />}
                     sx={{
                       width: '45%',
                       display: 'flex',
@@ -177,7 +172,7 @@ const PostDetail = ({
                   </Button>
                   <Button
                     variant="contained"
-                    startIcon={<ArrowBackIcon />}
+                    endIcon={<ArrowForwardIcon />}
                     sx={{
                       width: '45%',
                       display: 'flex',

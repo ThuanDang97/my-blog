@@ -3,13 +3,13 @@
 exports[`Navigation Component Should show match Navigation DOM Snapshot  1`] = `
 <div>
   <div
-    class="MuiBox-root css-sbwkat"
+    class="MuiBox-root css-7w1jqr"
   >
     <ul
       class="MuiList-root MuiList-padding css-1mq3yj5-MuiList-root"
     >
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
       >
         <a
           href="/"
@@ -18,7 +18,7 @@ exports[`Navigation Component Should show match Navigation DOM Snapshot  1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
       >
         <a
           href="/most-view"
@@ -27,7 +27,7 @@ exports[`Navigation Component Should show match Navigation DOM Snapshot  1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
       >
         <a
           href="/blog"
@@ -36,7 +36,7 @@ exports[`Navigation Component Should show match Navigation DOM Snapshot  1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
       >
         <a
           href="/about"
@@ -46,13 +46,13 @@ exports[`Navigation Component Should show match Navigation DOM Snapshot  1`] = `
       </li>
     </ul>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1l5obi7-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-15on3wz-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5f5q2y-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1unfims-MuiSvgIcon-root"
         focusable="false"
         viewBox="0 0 24 24"
       >

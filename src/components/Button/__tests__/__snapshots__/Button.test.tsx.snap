@@ -3,7 +3,7 @@
 exports[`Button Component Should show match Button DOM Snapshot 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-hwnglt-MuiButtonBase-root-MuiButton-root"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-gabfe8-MuiButtonBase-root-MuiButton-root"
     tabindex="0"
     type="button"
   >

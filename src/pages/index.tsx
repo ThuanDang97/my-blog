@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container, Typography, useTheme } from '@mui/material'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
@@ -23,6 +23,8 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const theme = useTheme()
+
   const contents = recipes.map(
     (item: InferGetStaticPropsType<typeof getStaticProps>) => item.fields,
   )
@@ -59,7 +61,7 @@ const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
             }}
           />
         </Box>
-        <Box component="section" bgcolor="#FFF7FF">
+        <Box component="section" bgcolor={theme.palette.primary.main}>
           <Container maxWidth="md">
             <Box padding="10px">
               <Typography

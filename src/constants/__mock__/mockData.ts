@@ -83,7 +83,7 @@ export const MOCK_DATA_CARD_POST = {
   alt: 'CSS',
   headerContent: 'CSS',
   view: '300',
-  href: '/',
+  href: '',
   shortContent: {
     data: {},
     content: [

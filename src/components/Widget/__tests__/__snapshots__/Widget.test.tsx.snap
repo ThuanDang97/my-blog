@@ -3,11 +3,10 @@
 exports[`Widget component should render Widget component 1`] = `
 <div>
   <aside
-    class="MuiBox-root css-9lsm0f"
+    class="MuiBox-root css-3ok2v2"
   >
     <h2
       class="MuiTypography-root MuiTypography-h2 css-w1deiu-MuiTypography-root"
-      data-testid="widget-title"
     >
       Categories
     </h2>
@@ -15,8 +14,7 @@ exports[`Widget component should render Widget component 1`] = `
       class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
     >
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
-        data-testid="widget-item"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
       >
         <a
           href="/python"
@@ -25,8 +23,7 @@ exports[`Widget component should render Widget component 1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
-        data-testid="widget-item"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
       >
         <a
           href="/javascript"
@@ -35,8 +32,7 @@ exports[`Widget component should render Widget component 1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
-        data-testid="widget-item"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
       >
         <a
           href="/nextjs"
@@ -45,8 +41,7 @@ exports[`Widget component should render Widget component 1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
-        data-testid="widget-item"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
       >
         <a
           href="/front-end"
@@ -55,8 +50,7 @@ exports[`Widget component should render Widget component 1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
-        data-testid="widget-item"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
       >
         <a
           href="/linux"
@@ -65,8 +59,7 @@ exports[`Widget component should render Widget component 1`] = `
         </a>
       </li>
       <li
-        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1otctin-MuiListItem-root"
-        data-testid="widget-item"
+        class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
       >
         <a
           href="/css"

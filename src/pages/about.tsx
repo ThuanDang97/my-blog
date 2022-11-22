@@ -5,6 +5,8 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 // Layouts
 import Header from '@layouts/Header'
+
+// Services
 import { getDataContent } from '@services/restClient'
 
 // Types

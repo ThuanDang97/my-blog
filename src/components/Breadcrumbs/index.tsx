@@ -1,5 +1,10 @@
 import { memo } from 'react'
-import { Breadcrumbs, BreadcrumbsProps, Typography } from '@mui/material'
+import {
+  Breadcrumbs,
+  BreadcrumbsProps,
+  Typography,
+  useTheme,
+} from '@mui/material'
 import Link from 'next/link'
 
 export interface LinkItem {
@@ -11,14 +16,20 @@ export interface IBreadcrumbs extends BreadcrumbsProps {
   links: LinkItem[]
 }
 const BasicBreadcrumbs = ({ links = [], ...props }: IBreadcrumbs) => {
+  const theme = useTheme()
+
   return (
     <Breadcrumbs {...props}>
-      <Typography color="#1A1B1D">
+      <Typography color={theme.palette.common.black}>
         <Link href="/">HOME</Link>
       </Typography>
 
       {links.map((item) => (
-        <Typography key={item.link} textTransform="uppercase" color="#1A1B1D">
+        <Typography
+          key={item.link}
+          textTransform="uppercase"
+          color={theme.palette.common.black}
+        >
           <Link href={item.href as string}>{item.link}</Link>
         </Typography>
       ))}

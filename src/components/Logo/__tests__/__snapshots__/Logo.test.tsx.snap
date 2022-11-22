@@ -3,7 +3,7 @@
 exports[`Logo Component Should show match Logo DOM Snapshot 1`] = `
 <div>
   <h1
-    class="MuiTypography-root MuiTypography-h1 css-1mjzbwl-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h1 css-vrj3go-MuiTypography-root"
   >
     <a
       href="/#"

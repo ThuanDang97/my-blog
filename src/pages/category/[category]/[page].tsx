@@ -1,7 +1,6 @@
 import { Box, Container } from '@mui/material'
 import { memo } from 'react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
-import { Document } from '@contentful/rich-text-types'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useRouter } from 'next/router'
@@ -20,21 +19,11 @@ import Button from '@components/Button'
 // Constants
 import { CATEGORY_ITEMS } from '@constants/__mock__/mockData'
 import { INDEX_PAGE, ITEM_PER_PAGE } from '@constants/index'
+import { DEFAULT_HEADER_URL } from '@constants/router'
 
-export interface IListPost {
-  heroImage: {
-    fields: {
-      file: {
-        url: string
-      }
-      title: string
-    }
-  }
-  title: string
-  description: Document
-  view: string
-  slug: string
-}
+// Types
+import { IListPost } from '@self-types/ListPost.types'
+import { BlogProps } from '@self-types/BlogProps.types'
 
 export interface CategoryDetailProps {
   posts: {
@@ -43,32 +32,45 @@ export interface CategoryDetailProps {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  await getDataContent({
+  const responseCategory = await getDataContent({
     typeContent: 'category',
   })
 
-  const response = await getDataContent({
-    typeContent: 'blogPost',
-    query: { 'fields.categories': 'programming' },
-  })
+  const pathsName = await Promise.all(
+    responseCategory.map(async (item) => {
+      const { slug } = item.fields as { slug: string }
 
-  const totalPage = Math.ceil(response.length / ITEM_PER_PAGE)
+      const slugUrl = slug === 'most-views' ? 'blog' : slug
 
-  const paths = Array.from(
-    {
-      length: totalPage,
-    },
-    (_, i) => {
-      return {
-        params: {
-          page: (i + 1).toString(),
+      // Get data by category
+      const categoryItem = await getDataContent({
+        typeContent: 'blogPost',
+        query: {
+          'fields.categories': `${slugUrl}`,
         },
-      }
-    },
+      })
+
+      // Calculator total Page
+      const totalPage = Math.ceil(categoryItem.length / ITEM_PER_PAGE)
+
+      return Array.from(
+        {
+          length: totalPage,
+        },
+        (_, i) => {
+          return {
+            params: {
+              category: slug as string,
+              page: (i + 1).toString(),
+            },
+          }
+        },
+      )
+    }),
   )
 
   return {
-    paths,
+    paths: await pathsName.flat(),
     fallback: false,
   }
 }
@@ -76,14 +78,20 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const response = await getDataContent({
     typeContent: 'blogPost',
-    skipValue: (parseInt(params?.page as string, 10) - 1) * ITEM_PER_PAGE,
-    limitResults: ITEM_PER_PAGE,
-    query: { 'fields.categories': 'programming' },
+    skip: (parseInt(params?.page as string, 10) - 1) * ITEM_PER_PAGE,
+    limit: ITEM_PER_PAGE,
+    query: {
+      'fields.categories': `${
+        params?.category === 'most-views' ? 'blog' : params?.category
+      }`,
+      'fields.view[gte]': `${params?.category === 'most-views' ? '500' : '0'}`,
+    },
   })
 
   const listPosts = response.map((post) => {
     return { fields: post.fields, sys: post.sys }
   })
+
   return {
     props: {
       posts: listPosts,
@@ -92,14 +100,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 }
 
-const ProgrammingListPage = ({
+const CategoryPage = ({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter()
 
-  const listBlog = posts.map(
-    (post: InferGetStaticPropsType<typeof getStaticProps>) => post.fields,
-  )
+  const listBlog = posts.map((post: BlogProps) => post.fields)
 
   const renderContentBlog = () => {
     return listBlog.map((blog: IListPost) => (
@@ -116,7 +122,12 @@ const ProgrammingListPage = ({
   }
 
   const handleGetOlderPosts = () => {
-    router.push(`/programming/${INDEX_PAGE + 1}`)
+    router.push({
+      pathname: DEFAULT_HEADER_URL.MOST_VIEW.URL,
+      query: {
+        page: INDEX_PAGE + 1,
+      },
+    })
   }
 
   const handleGetNewerPosts = () => {
@@ -126,9 +137,9 @@ const ProgrammingListPage = ({
   return (
     <>
       <Header
-        pageTitle="Programming"
+        pageTitle="Most Views"
         breadCrumbs={[
-          { link: CATEGORY_ITEMS[1].name, href: CATEGORY_ITEMS[1].slug },
+          { link: CATEGORY_ITEMS[3].name, href: CATEGORY_ITEMS[3].slug },
         ]}
       />
       <Box component="main">
@@ -143,7 +154,7 @@ const ProgrammingListPage = ({
             <Box display="flex" width="100%" justifyContent="space-between">
               <Button
                 variant="contained"
-                endIcon={<ArrowForwardIcon />}
+                startIcon={<ArrowBackIcon />}
                 sx={{
                   width: '45%',
                   display: 'flex',
@@ -156,7 +167,7 @@ const ProgrammingListPage = ({
               </Button>
               <Button
                 variant="contained"
-                startIcon={<ArrowBackIcon />}
+                endIcon={<ArrowForwardIcon />}
                 sx={{
                   width: '45%',
                   display: 'flex',
@@ -186,4 +197,4 @@ const ProgrammingListPage = ({
   )
 }
 
-export default memo(ProgrammingListPage)
+export default memo(CategoryPage)

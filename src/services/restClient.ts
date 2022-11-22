@@ -3,15 +3,16 @@ import { createClient } from 'contentful'
 export type TGetDataContent = {
   typeContent: string
   views?: number
-  skipValue?: number
-  limitResults?: number
+  skip?: number
+  limit?: number
   order?: string
   query?: object
 }
+
 export const getDataContent = async ({
   typeContent,
-  skipValue = 0,
-  limitResults,
+  skip = 0,
+  limit,
   order = 'sys.createdAt',
   query = {},
 }: TGetDataContent) => {
@@ -23,8 +24,8 @@ export const getDataContent = async ({
   const res = await client.getEntries({
     content_type: typeContent,
     order,
-    skip: skipValue,
-    limit: limitResults,
+    skip,
+    limit,
     ...query,
   })
 

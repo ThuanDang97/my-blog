@@ -9,6 +9,7 @@ import theme from '@self-types/Themes.types'
 
 import '../../styles/globals.css'
 import '../../styles/reset.css'
+import '../../styles/404.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

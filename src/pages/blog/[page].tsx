@@ -22,6 +22,7 @@ import { INDEX_PAGE, ITEM_PER_PAGE } from '@constants/index'
 
 // Types
 import { IListPost } from '@self-types/ListPost.types'
+import { BlogProps } from '@self-types/BlogProps.types'
 
 export interface CategoryDetailProps {
   posts: {
@@ -30,10 +31,6 @@ export interface CategoryDetailProps {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  await getDataContent({
-    typeContent: 'category',
-  })
-
   const response = await getDataContent({
     typeContent: 'blogPost',
     query: { 'fields.categories': 'blog' },
@@ -63,8 +60,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const response = await getDataContent({
     typeContent: 'blogPost',
-    skipValue: (parseInt(params?.page as string, 10) - 1) * ITEM_PER_PAGE,
-    limitResults: ITEM_PER_PAGE,
+    skip: (parseInt(params?.page as string, 10) - 1) * ITEM_PER_PAGE,
+    limit: ITEM_PER_PAGE,
   })
 
   const listPosts = response.map((post) => {
@@ -82,9 +79,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 const PageBlogList = ({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const listBlog = posts.map(
-    (post: InferGetStaticPropsType<typeof getStaticProps>) => post.fields,
-  )
+  const listBlog = posts.map((post: BlogProps) => post.fields)
 
   const router = useRouter()
 
@@ -125,7 +120,7 @@ const PageBlogList = ({
             <Box display="flex" width="100%" justifyContent="space-between">
               <Button
                 variant="contained"
-                endIcon={<ArrowForwardIcon />}
+                startIcon={<ArrowBackIcon />}
                 sx={{
                   width: '45%',
                   display: 'flex',
@@ -138,7 +133,7 @@ const PageBlogList = ({
               </Button>
               <Button
                 variant="contained"
-                startIcon={<ArrowBackIcon />}
+                endIcon={<ArrowForwardIcon />}
                 sx={{
                   width: '45%',
                   display: 'flex',

@@ -6,13 +6,13 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
     class="MuiBox-root css-1p2cbqg"
   >
     <div
-      class="MuiBox-root css-kgqhli"
+      class="MuiBox-root css-kp6j5k"
     >
       <div
         class="MuiContainer-root MuiContainer-maxWidthLg css-9tjvhq-MuiContainer-root"
       >
         <h1
-          class="MuiTypography-root MuiTypography-h1 css-12z373z-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h1 css-1pidjnp-MuiTypography-root"
         >
           <a
             href="/"
@@ -21,13 +21,13 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
           </a>
         </h1>
         <div
-          class="MuiBox-root css-sbwkat"
+          class="MuiBox-root css-7w1jqr"
         >
           <ul
             class="MuiList-root MuiList-padding css-1mq3yj5-MuiList-root"
           >
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
                 href="/"
@@ -36,7 +36,7 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
                 href="/category/most-views/1"
@@ -45,7 +45,7 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
                 href="/blog/1"
@@ -54,7 +54,7 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
                 href="/about"
@@ -63,7 +63,7 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
               </a>
             </li>
             <li
-              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-qxkstm-MuiListItem-root"
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
                 href="/category/short-posts/1"
@@ -73,13 +73,13 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
             </li>
           </ul>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1l5obi7-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-15on3wz-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-5f5q2y-MuiSvgIcon-root"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1unfims-MuiSvgIcon-root"
               focusable="false"
               viewBox="0 0 24 24"
             >

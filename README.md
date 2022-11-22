@@ -79,3 +79,4 @@
 | `pnpm prepare`                                              | Install folder .husky                              |
 | `pnpm test`                                                 | Testing application                                |
 | `pnpm test:coverage`                                        | Testing application and get coverage               |
+| deployment                                                  | [my-blog](https://my-blog-bay-seven.vercel.app/)   |
