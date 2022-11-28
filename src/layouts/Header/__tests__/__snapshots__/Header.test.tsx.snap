@@ -39,7 +39,7 @@ exports[`Header layouts should render Header layouts 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
-                href="/category/most-views/1"
+                href="/category/most-views"
               >
                 Most views
               </a>
@@ -48,7 +48,7 @@ exports[`Header layouts should render Header layouts 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
-                href="/blog/1"
+                href="/blog"
               >
                 Blog
               </a>
@@ -66,7 +66,7 @@ exports[`Header layouts should render Header layouts 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
-                href="/category/short-posts/1"
+                href="/category/short-posts"
               >
                 Short Posts
               </a>

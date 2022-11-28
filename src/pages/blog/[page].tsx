@@ -17,8 +17,9 @@ import Widget from '@components/Widget'
 import Button from '@components/Button'
 
 // Constants
-import { CATEGORY_ITEMS } from '@constants/__mock__/mockData'
+import { MOCK_CATEGORY_ITEMS } from '@constants/__mock__/mockData'
 import { INDEX_PAGE, ITEM_PER_PAGE } from '@constants/index'
+import { DEFAULT_HEADER_URL } from '@constants/router'
 
 // Types
 import { IListPost } from '@self-types/ListPost.types'
@@ -98,7 +99,12 @@ const PageBlogList = ({
   }
 
   const handleGetOlderPosts = () => {
-    router.push(`/blog/${INDEX_PAGE + 1}`)
+    router.push({
+      pathname: `${DEFAULT_HEADER_URL.BLOG.URL}?page=`,
+      query: {
+        page: INDEX_PAGE + 1,
+      },
+    })
   }
 
   const handleGetNewerPosts = () => {
@@ -155,7 +161,7 @@ const PageBlogList = ({
             />
 
             {/* Category */}
-            <Widget widgetsItem={CATEGORY_ITEMS} title="Category" />
+            <Widget widgetsItem={MOCK_CATEGORY_ITEMS} title="Category" />
           </Box>
         </Container>
       </Box>

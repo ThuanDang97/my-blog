@@ -17,7 +17,7 @@ import Widget from '@components/Widget'
 import Button from '@components/Button'
 
 // Constants
-import { CATEGORY_ITEMS } from '@constants/__mock__/mockData'
+import { MOCK_CATEGORY_ITEMS } from '@constants/__mock__/mockData'
 import { INDEX_PAGE, ITEM_PER_PAGE } from '@constants/index'
 import { DEFAULT_HEADER_URL } from '@constants/router'
 
@@ -60,7 +60,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         (_, i) => {
           return {
             params: {
-              category: slug as string,
+              category: slug,
               page: (i + 1).toString(),
             },
           }
@@ -123,7 +123,7 @@ const CategoryPage = ({
 
   const handleGetOlderPosts = () => {
     router.push({
-      pathname: DEFAULT_HEADER_URL.MOST_VIEW.URL,
+      pathname: `${DEFAULT_HEADER_URL.MOST_VIEW.URL}?page=`,
       query: {
         page: INDEX_PAGE + 1,
       },
@@ -139,7 +139,10 @@ const CategoryPage = ({
       <Header
         pageTitle="Most Views"
         breadCrumbs={[
-          { link: CATEGORY_ITEMS[3].name, href: CATEGORY_ITEMS[3].slug },
+          {
+            link: MOCK_CATEGORY_ITEMS[3].name,
+            href: MOCK_CATEGORY_ITEMS[3].slug,
+          },
         ]}
       />
       <Box component="main">
@@ -189,7 +192,7 @@ const CategoryPage = ({
             />
 
             {/* Category */}
-            <Widget widgetsItem={CATEGORY_ITEMS} title="Category" />
+            <Widget widgetsItem={MOCK_CATEGORY_ITEMS} title="Category" />
           </Box>
         </Container>
       </Box>

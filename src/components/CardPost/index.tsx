@@ -36,6 +36,7 @@ const CardPost = ({
             maxWidth: '100%',
             maxHeight: '60%',
           }}
+          loading="lazy"
         />
         <Box
           padding="40px 40px 20px"

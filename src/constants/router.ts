@@ -5,11 +5,11 @@ export const DEFAULT_HEADER_URL = {
   },
   MOST_VIEW: {
     TITLE: 'Most views',
-    URL: '/category/most-views/1',
+    URL: '/category/most-views',
   },
   BLOG: {
     TITLE: 'Blog',
-    URL: '/blog/1',
+    URL: '/blog',
   },
   ABOUT: {
     TITLE: 'About',
@@ -17,6 +17,6 @@ export const DEFAULT_HEADER_URL = {
   },
   SHORT_POST: {
     TITLE: 'Short Posts',
-    URL: '/category/short-posts/1',
+    URL: '/category/short-posts',
   },
 }

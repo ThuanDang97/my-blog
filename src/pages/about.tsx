@@ -57,6 +57,7 @@ const AboutPage = ({
             alt="avatar"
             width={200}
             height={200}
+            loading="eager"
           />
           <Box lineHeight="35px" letterSpacing="0.7px" marginTop={3}>
             {documentToReactComponents(content.introduceYourself)}

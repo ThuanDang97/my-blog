@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import { ReactNode } from 'react'
+import { lazy, ReactNode, Suspense } from 'react'
 
 // Layouts
-import Footer from '@layouts/Footer'
-
+const Footer = lazy(() => import('@layouts/Footer'))
 export interface IPageLayout {
   children: ReactNode
 }
+
 const PageLayout = ({ children }: IPageLayout) => {
   return (
     <>
@@ -14,7 +14,9 @@ const PageLayout = ({ children }: IPageLayout) => {
         <title>Code your life in an elegant way</title>
       </Head>
       {children}
-      <Footer />
+      <Suspense fallback={<div>loading.....</div>}>
+        <Footer />
+      </Suspense>
     </>
   )
 }

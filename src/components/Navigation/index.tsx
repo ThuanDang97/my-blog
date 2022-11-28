@@ -31,11 +31,11 @@ const Navigation = ({ navItems }: INavigation) => {
   }
 
   const handleGetValue = () => {
-    console.log(123)
+    // console.log(123)
   }
 
   const handleKeyDown = () => {
-    console.log(123)
+    // console.log(123)
   }
 
   return (

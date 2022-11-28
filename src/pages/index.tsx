@@ -59,6 +59,7 @@ const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
               borderRadius: '103% 103% 103% 103%',
               marginBottom: '70px',
             }}
+            loading="eager"
           />
         </Box>
         <Box component="section" bgcolor={theme.palette.primary.main}>

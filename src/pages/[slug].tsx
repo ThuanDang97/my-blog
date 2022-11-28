@@ -1,4 +1,4 @@
-import { lazy, useCallback } from 'react'
+import { useCallback } from 'react'
 import Header from '@layouts/Header'
 import { Box, Container } from '@mui/material'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
@@ -6,12 +6,13 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import { useRouter } from 'next/router'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import Image from 'next/image'
 
 // Services
 import { getDataContent } from '@services/restClient'
 
 // Constants
-import { CATEGORY_ITEMS } from '@constants/__mock__/mockData'
+import { MOCK_CATEGORY_ITEMS } from '@constants/__mock__/mockData'
 
 // Components
 import Widget from '@components/Widget'
@@ -20,8 +21,6 @@ import Button from '@components/Button'
 // Types
 import { IPostDetail } from '@self-types/PostDetail.types'
 import { BlogProps } from '@self-types/BlogProps.types'
-
-const Image = lazy(() => import('next/image'))
 
 export type TPath = {
   fields: {
@@ -145,6 +144,7 @@ const PostDetail = ({
                     maxWidth: '100%',
                     maxHeight: '100%',
                   }}
+                  loading="lazy"
                 />
 
                 <Box
@@ -186,7 +186,7 @@ const PostDetail = ({
               </Box>
               <Box minWidth="25%">
                 {/* Category */}
-                <Widget widgetsItem={CATEGORY_ITEMS} title="Category" />
+                <Widget widgetsItem={MOCK_CATEGORY_ITEMS} title="Category" />
               </Box>
             </Container>
           </Box>

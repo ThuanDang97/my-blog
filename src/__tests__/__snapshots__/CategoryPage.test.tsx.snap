@@ -39,7 +39,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
-                href="/category/most-views/1"
+                href="/category/most-views"
               >
                 Most views
               </a>
@@ -48,7 +48,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
-                href="/blog/1"
+                href="/blog"
               >
                 Blog
               </a>
@@ -66,7 +66,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
             >
               <a
-                href="/category/short-posts/1"
+                href="/category/short-posts"
               >
                 Short Posts
               </a>
@@ -143,7 +143,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
                 class="MuiTypography-root MuiTypography-body1 css-hiwasb-MuiTypography-root"
               >
                 <a
-                  href="/category/most-views/1"
+                  href="/category/most-views"
                 >
                   Most Views
                 </a>
@@ -221,6 +221,66 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
                 >
                   <a
                     href="/cac-bai-viet-ngan-phan-1"
+                  >
+                    CONTINUE READING...
+                  </a>
+                </p>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article
+          class="MuiBox-root css-zelrb1"
+        >
+          <figure
+            class="MuiBox-root css-1defjo5"
+          >
+            <img
+              alt="food-2203732 1280"
+              data-nimg="1"
+              decoding="async"
+              height="500"
+              loading="lazy"
+              src="/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=3840&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=1920&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=3840&q=75 2x"
+              style="color: transparent; max-width: 100%; max-height: 60%;"
+              width="1280"
+            />
+            <div
+              class="MuiBox-root css-1dzd2um"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 css-1r4hp4x-MuiTypography-root"
+              >
+                <a
+                  href="/cac-bai-viet-ngan-phan-2"
+                >
+                  Các bài viết ngắn – phần 2
+                </a>
+              </h2>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <div
+                  class="MuiBox-root css-h0kv6j"
+                >
+                  <p>
+                    .gitkeep File &lt;strong&gt;.gitkeep&lt;/strong&gt; thường được biết đến như là cách để có thể commit một thư mục trống lên trong quá trình thiết kế cấu trúc thư mục cho dự án của bạn. Ví dụ cấu trúc một website đơn…
+
+
+                  </p>
+                </div>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-r6opal-MuiTypography-root"
+                >
+                  380 views
+                   
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1ngiwr2-MuiTypography-root"
+                >
+                  <a
+                    href="/cac-bai-viet-ngan-phan-2"
                   >
                     CONTINUE READING...
                   </a>
@@ -307,6 +367,15 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
                 Các bài viết ngắn – phần 1
               </a>
             </li>
+            <li
+              class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+            >
+              <a
+                href="/cac-bai-viet-ngan-phan-2"
+              >
+                Các bài viết ngắn – phần 2
+              </a>
+            </li>
           </ul>
         </aside>
         <aside
@@ -324,7 +393,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
             >
               <a
-                href="/blog/1"
+                href="/blog"
               >
                 All
               </a>
@@ -333,7 +402,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
             >
               <a
-                href="/category/programming/1"
+                href="/category/programming"
               >
                 Programming
               </a>
@@ -342,7 +411,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
             >
               <a
-                href="/category/short-posts/1"
+                href="/category/short-posts"
               >
                 Short Posts
               </a>
@@ -351,7 +420,7 @@ exports[`Page Category Page Category matches DOM Snapshot 1`] = `
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
             >
               <a
-                href="/category/most-views/1"
+                href="/category/most-views"
               >
                 Most Views
               </a>

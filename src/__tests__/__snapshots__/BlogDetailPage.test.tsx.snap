@@ -1,3 +1,668 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Page Detail Page Detail matches DOM Snapshot 1`] = `<div />`;
+exports[`Page Detail Page Detail matches DOM Snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <header
+      class="MuiBox-root css-1p2cbqg"
+    >
+      <div
+        class="MuiBox-root css-kp6j5k"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg css-9tjvhq-MuiContainer-root"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h1 css-1pidjnp-MuiTypography-root"
+          >
+            <a
+              href="/"
+            >
+              BEAUTYONCODE
+            </a>
+          </h1>
+          <div
+            class="MuiBox-root css-7w1jqr"
+          >
+            <ul
+              class="MuiList-root MuiList-padding css-1mq3yj5-MuiList-root"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/"
+                >
+                  HOME
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/category/most-views"
+                >
+                  Most views
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/category/short-posts"
+                >
+                  Short Posts
+                </a>
+              </li>
+            </ul>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-15on3wz-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1unfims-MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="SearchIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </svg>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div>
+            loading.....
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-8uxnzh"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+        >
+          <nav
+            class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root"
+          >
+            <ol
+              class="MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"
+            >
+              <li
+                class="MuiBreadcrumbs-li"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7xpsn0-MuiTypography-root"
+                >
+                  <a
+                    href="/"
+                  >
+                    HOME
+                  </a>
+                </p>
+              </li>
+              <li
+                aria-hidden="true"
+                class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+              >
+                /
+              </li>
+              <li
+                class="MuiBreadcrumbs-li"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hiwasb-MuiTypography-root"
+                >
+                  <a
+                    href="/cac-bai-viet-ngan-phan-1"
+                  >
+                    Các bài viết ngắn – phần 1
+                  </a>
+                </p>
+              </li>
+            </ol>
+          </nav>
+          <h2
+            class="MuiTypography-root MuiTypography-h2 css-zd04td-MuiTypography-root"
+            data-testid="page-title"
+          >
+            Các bài viết ngắn – phần 1
+          </h2>
+        </div>
+      </div>
+    </header>
+    <main
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg css-c731gg-MuiContainer-root"
+      >
+        <div
+          class="MuiBox-root css-x5eu6"
+        >
+          <img
+            alt="cac-bai-viet-ngan-phan-1"
+            data-nimg="1"
+            decoding="async"
+            height="500"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=1200&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=3840&q=75 2x"
+            style="color: transparent; max-width: 100%; max-height: 100%;"
+            width="1200"
+          />
+          <div
+            class="MuiBox-root css-cjf6nu"
+          >
+            <h2>
+              .gitkeep
+            </h2>
+            <p>
+              File 
+              <b>
+                .gitkeep
+              </b>
+               thường được biết đến như là cách để có thể commit một thư mục trống lên trong quá trình thiết kế cấu trúc thư mục cho dự án của bạn.Ví dụ cấu trúc một website đơn giản:
+            </p>
+            <p>
+              <code>
+                src/
+|-- assets/
+  |-- images/
+|-- styles/
+  |-- main.css
+index.html
+[README.md](&lt;http://readme.md/&gt;)
+              </code>
+            </p>
+            <p>
+              
+Nếu không có .gitkeep trong thư mục “images” thì mình không thể commit cả hai thư mục “assets” và “images” lên repo được, kết quả là không giữ được cấu trúc thư mục như trên(hình 1)Và đây là kết quả khi đặt .gitkeep trong thư mục “images”, cấu trúc thư mục sẽ được đảm bảo(hình 2)Câu hỏi đặt ra là: tại sao lại là .gitkeep? Có thể dùng file khác thay thế được không?Trả lời: 
+              <b>
+                CÓ
+              </b>
+               thể dùng file khác thay thế! Ví dụ: text.txt hay thậm chí là .gitignoreTuy nhiên vì mục đích của file này là giữ cho một thư mục có thể trống, theo nghĩa đen của nó, nên theo cách làm tiêu chuẩn sẽ là một file có đủ ý nghĩa trên:– .gitkeep là file ẩn– .gitkeep mang ý nghĩa đúng với vai trò của nóHi vọng bạn sẽ nhớ đến .gitkeep khi cần commit thư mục trống và hiểu thêm vì sao lại dùng bạn ấy nhé! Cơ mà nói chứ bạn sẽ ít xài lắm, vì thư mục có khi nào trống đâu haha.Bài viết gốc nằm trên blog của mình ở 
+              <a
+                href="https://beautyoncode.com/gitkeep/"
+              >
+                đây
+              </a>
+              .
+            </p>
+          </div>
+          <div
+            class="MuiBox-root css-1ufrzn0"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1ck34rp-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="ArrowBackIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                  />
+                </svg>
+              </span>
+              Các bài viết ngắn – phần 1
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1vmgmr7-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              Các bài viết ngắn – phần 1
+              <span
+                class="MuiButton-endIcon MuiButton-iconSizeMedium css-9tj150-MuiButton-endIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="ArrowForwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-1kj6f6k"
+        >
+          <aside
+            class="MuiBox-root css-3ok2v2"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h2 css-w1deiu-MuiTypography-root"
+            >
+              Category
+            </h2>
+            <ul
+              class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/blog"
+                >
+                  All
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/category/programming"
+                >
+                  Programming
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/category/short-posts"
+                >
+                  Short Posts
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/category/most-views"
+                >
+                  Most Views
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <header
+      class="MuiBox-root css-1p2cbqg"
+    >
+      <div
+        class="MuiBox-root css-kp6j5k"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg css-9tjvhq-MuiContainer-root"
+        >
+          <h1
+            class="MuiTypography-root MuiTypography-h1 css-1pidjnp-MuiTypography-root"
+          >
+            <a
+              href="/"
+            >
+              BEAUTYONCODE
+            </a>
+          </h1>
+          <div
+            class="MuiBox-root css-7w1jqr"
+          >
+            <ul
+              class="MuiList-root MuiList-padding css-1mq3yj5-MuiList-root"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/"
+                >
+                  HOME
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/category/most-views"
+                >
+                  Most views
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
+              >
+                <a
+                  href="/category/short-posts"
+                >
+                  Short Posts
+                </a>
+              </li>
+            </ul>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-15on3wz-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1unfims-MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="SearchIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </svg>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div>
+            loading.....
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-8uxnzh"
+      >
+        <div
+          class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+        >
+          <nav
+            class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root"
+          >
+            <ol
+              class="MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"
+            >
+              <li
+                class="MuiBreadcrumbs-li"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-7xpsn0-MuiTypography-root"
+                >
+                  <a
+                    href="/"
+                  >
+                    HOME
+                  </a>
+                </p>
+              </li>
+              <li
+                aria-hidden="true"
+                class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+              >
+                /
+              </li>
+              <li
+                class="MuiBreadcrumbs-li"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-hiwasb-MuiTypography-root"
+                >
+                  <a
+                    href="/cac-bai-viet-ngan-phan-2"
+                  >
+                    Các bài viết ngắn – phần 2
+                  </a>
+                </p>
+              </li>
+            </ol>
+          </nav>
+          <h2
+            class="MuiTypography-root MuiTypography-h2 css-zd04td-MuiTypography-root"
+            data-testid="page-title"
+          >
+            Các bài viết ngắn – phần 2
+          </h2>
+        </div>
+      </div>
+    </header>
+    <main
+      class="MuiBox-root css-0"
+    >
+      <div
+        class="MuiContainer-root MuiContainer-maxWidthLg css-c731gg-MuiContainer-root"
+      >
+        <div
+          class="MuiBox-root css-x5eu6"
+        >
+          <img
+            alt="cac-bai-viet-ngan-phan-2"
+            data-nimg="1"
+            decoding="async"
+            height="500"
+            loading="lazy"
+            src="/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=1200&q=75 1x, /_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Font2c8ajcvde%2F6llpDgAKQDU0CzC8qJWeFh%2Fc31582e70f63c105e9c64f06b55af3cc%2Ffood-2203732_1280.png&w=3840&q=75 2x"
+            style="color: transparent; max-width: 100%; max-height: 100%;"
+            width="1200"
+          />
+          <div
+            class="MuiBox-root css-cjf6nu"
+          >
+            <h2>
+              .gitkeep
+            </h2>
+            <p>
+              File 
+              <b>
+                .gitkeep
+              </b>
+               thường được biết đến như là cách để có thể commit một thư mục trống lên trong quá trình thiết kế cấu trúc thư mục cho dự án của bạn.Ví dụ cấu trúc một website đơn giản:
+            </p>
+            <p>
+              <code>
+                src/
+|-- assets/
+  |-- images/
+|-- styles/
+  |-- main.css
+index.html
+[README.md](&lt;http://readme.md/&gt;)
+              </code>
+            </p>
+            <p>
+              
+Nếu không có .gitkeep trong thư mục “images” thì mình không thể commit cả hai thư mục “assets” và “images” lên repo được, kết quả là không giữ được cấu trúc thư mục như trên(hình 1)Và đây là kết quả khi đặt .gitkeep trong thư mục “images”, cấu trúc thư mục sẽ được đảm bảo(hình 2)Câu hỏi đặt ra là: tại sao lại là .gitkeep? Có thể dùng file khác thay thế được không?Trả lời: 
+              <b>
+                CÓ
+              </b>
+               thể dùng file khác thay thế! Ví dụ: text.txt hay thậm chí là .gitignoreTuy nhiên vì mục đích của file này là giữ cho một thư mục có thể trống, theo nghĩa đen của nó, nên theo cách làm tiêu chuẩn sẽ là một file có đủ ý nghĩa trên:– .gitkeep là file ẩn– .gitkeep mang ý nghĩa đúng với vai trò của nóHi vọng bạn sẽ nhớ đến .gitkeep khi cần commit thư mục trống và hiểu thêm vì sao lại dùng bạn ấy nhé! Cơ mà nói chứ bạn sẽ ít xài lắm, vì thư mục có khi nào trống đâu haha.Bài viết gốc nằm trên blog của mình ở 
+              <a
+                href="https://beautyoncode.com/gitkeep/"
+              >
+                đây
+              </a>
+              .
+            </p>
+          </div>
+          <div
+            class="MuiBox-root css-1ufrzn0"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1ck34rp-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="ArrowBackIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                  />
+                </svg>
+              </span>
+              Các bài viết ngắn – phần 1
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1vmgmr7-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              Các bài viết ngắn – phần 1
+              <span
+                class="MuiButton-endIcon MuiButton-iconSizeMedium css-9tj150-MuiButton-endIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="ArrowForwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-1kj6f6k"
+        >
+          <aside
+            class="MuiBox-root css-3ok2v2"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h2 css-w1deiu-MuiTypography-root"
+            >
+              Category
+            </h2>
+            <ul
+              class="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/blog"
+                >
+                  All
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/category/programming"
+                >
+                  Programming
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/category/short-posts"
+                >
+                  Short Posts
+                </a>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ejib7g-MuiListItem-root"
+              >
+                <a
+                  href="/category/most-views"
+                >
+                  Most Views
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;

@@ -130,22 +130,22 @@ export const MOCK_NAVIGATE = {
   ],
 }
 
-export const CATEGORY_ITEMS = [
+export const MOCK_CATEGORY_ITEMS = [
   {
     name: 'All',
-    slug: 'blog/1',
+    slug: 'blog',
   },
   {
     name: 'Programming',
-    slug: 'category/programming/1',
+    slug: 'category/programming',
   },
   {
     name: 'Short Posts',
-    slug: 'category/short-posts/1',
+    slug: 'category/short-posts',
   },
   {
     name: 'Most Views',
-    slug: 'category/most-views/1',
+    slug: 'category/most-views',
   },
 ]
 
@@ -154,6 +154,219 @@ export const MOCK_DATA_PAGE = [
     fields: {
       title: 'Các bài viết ngắn – phần 1',
       slug: 'cac-bai-viet-ngan-phan-1',
+      description: {
+        data: {},
+        content: [
+          {
+            data: {},
+            content: [
+              {
+                data: {},
+                marks: [],
+                value:
+                  '.gitkeep File <strong>.gitkeep</strong> thường được biết đến như là cách để có thể commit một thư mục trống lên trong quá trình thiết kế cấu trúc thư mục cho dự án của bạn. Ví dụ cấu trúc một website đơn…\n\n',
+                nodeType: 'text',
+              },
+            ],
+            nodeType: 'paragraph',
+          },
+        ],
+        nodeType: 'document',
+      },
+      heroImage: {
+        metadata: {
+          tags: [],
+        },
+        sys: {
+          space: {
+            sys: {
+              type: 'Link',
+              linkType: 'Space',
+              id: 'ont2c8ajcvde',
+            },
+          },
+          id: '6llpDgAKQDU0CzC8qJWeFh',
+          type: 'Asset',
+          createdAt: '2022-11-17T03:54:58.616Z',
+          updatedAt: '2022-11-17T03:54:58.616Z',
+          environment: {
+            sys: {
+              id: 'master',
+              type: 'Link',
+              linkType: 'Environment',
+            },
+          },
+          revision: 1,
+          locale: 'en-US',
+        },
+        fields: {
+          title: 'food-2203732 1280',
+          description: '',
+          file: {
+            url: '//images.ctfassets.net/ont2c8ajcvde/6llpDgAKQDU0CzC8qJWeFh/c31582e70f63c105e9c64f06b55af3cc/food-2203732_1280.png',
+            details: {
+              size: 270722,
+              image: {
+                width: 1280,
+                height: 853,
+              },
+            },
+            fileName: 'food-2203732_1280.png',
+            contentType: 'image/webp',
+          },
+        },
+      },
+      content: {
+        data: {},
+        content: [
+          {
+            data: {},
+            content: [
+              {
+                data: {},
+                marks: [],
+                value: '.gitkeep',
+                nodeType: 'text',
+              },
+            ],
+            nodeType: 'heading-2',
+          },
+          {
+            data: {},
+            content: [
+              {
+                data: {},
+                marks: [],
+                value: 'File ',
+                nodeType: 'text',
+              },
+              {
+                data: {},
+                marks: [
+                  {
+                    type: 'bold',
+                  },
+                ],
+                value: '.gitkeep',
+                nodeType: 'text',
+              },
+              {
+                data: {},
+                marks: [],
+                value:
+                  ' thường được biết đến như là cách để có thể commit một thư mục trống lên trong quá trình thiết kế cấu trúc thư mục cho dự án của bạn.Ví dụ cấu trúc một website đơn giản:',
+                nodeType: 'text',
+              },
+            ],
+            nodeType: 'paragraph',
+          },
+          {
+            data: {},
+            content: [
+              {
+                data: {},
+                marks: [
+                  {
+                    type: 'code',
+                  },
+                ],
+                value:
+                  'src/\n|-- assets/\n  |-- images/\n|-- styles/\n  |-- main.css\nindex.html\n[README.md](<http://readme.md/>)',
+                nodeType: 'text',
+              },
+            ],
+            nodeType: 'paragraph',
+          },
+          {
+            data: {},
+            content: [
+              {
+                data: {},
+                marks: [],
+                value:
+                  '\nNếu không có .gitkeep trong thư mục “images” thì mình không thể commit cả hai thư mục “assets” và “images” lên repo được, kết quả là không giữ được cấu trúc thư mục như trên(hình 1)Và đây là kết quả khi đặt .gitkeep trong thư mục “images”, cấu trúc thư mục sẽ được đảm bảo(hình 2)Câu hỏi đặt ra là: tại sao lại là .gitkeep? Có thể dùng file khác thay thế được không?Trả lời: ',
+                nodeType: 'text',
+              },
+              {
+                data: {},
+                marks: [
+                  {
+                    type: 'bold',
+                  },
+                ],
+                value: 'CÓ',
+                nodeType: 'text',
+              },
+              {
+                data: {},
+                marks: [],
+                value:
+                  ' thể dùng file khác thay thế! Ví dụ: text.txt hay thậm chí là .gitignoreTuy nhiên vì mục đích của file này là giữ cho một thư mục có thể trống, theo nghĩa đen của nó, nên theo cách làm tiêu chuẩn sẽ là một file có đủ ý nghĩa trên:– .gitkeep là file ẩn– .gitkeep mang ý nghĩa đúng với vai trò của nóHi vọng bạn sẽ nhớ đến .gitkeep khi cần commit thư mục trống và hiểu thêm vì sao lại dùng bạn ấy nhé! Cơ mà nói chứ bạn sẽ ít xài lắm, vì thư mục có khi nào trống đâu haha.Bài viết gốc nằm trên blog của mình ở ',
+                nodeType: 'text',
+              },
+              {
+                data: {
+                  uri: 'https://beautyoncode.com/gitkeep/',
+                },
+                content: [
+                  {
+                    data: {},
+                    marks: [],
+                    value: 'đây',
+                    nodeType: 'text',
+                  },
+                ],
+                nodeType: 'hyperlink',
+              },
+              {
+                data: {},
+                marks: [],
+                value: '.',
+                nodeType: 'text',
+              },
+            ],
+            nodeType: 'paragraph',
+          },
+        ],
+        nodeType: 'document',
+      },
+      view: 380,
+      categories: ['short-posts', 'blog'],
+    },
+    sys: {
+      space: {
+        sys: {
+          type: 'Link',
+          linkType: 'Space',
+          id: 'ont2c8ajcvde',
+        },
+      },
+      id: '11BbemYYQxoxV9QDhDH5eN',
+      type: 'Entry',
+      createdAt: '2022-11-17T03:55:05.969Z',
+      updatedAt: '2022-11-17T03:55:05.969Z',
+      environment: {
+        sys: {
+          id: 'master',
+          type: 'Link',
+          linkType: 'Environment',
+        },
+      },
+      revision: 1,
+      contentType: {
+        sys: {
+          type: 'Link',
+          linkType: 'ContentType',
+          id: 'blogPost',
+        },
+      },
+      locale: 'en-US',
+    },
+  },
+  {
+    fields: {
+      title: 'Các bài viết ngắn – phần 2',
+      slug: 'cac-bai-viet-ngan-phan-2',
       description: {
         data: {},
         content: [
