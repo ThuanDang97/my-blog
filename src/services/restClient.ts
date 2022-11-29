@@ -13,7 +13,7 @@ export const getDataContent = async ({
   typeContent,
   skip = 0,
   limit,
-  order = 'sys.createdAt',
+  order,
   query = {},
 }: TGetDataContent) => {
   const client = createClient({

@@ -4,6 +4,7 @@
     local('JosefinSans-VariableFont_wght'),
     url('../public/fonts/JosefinSans-VariableFont_wght.ttf') format('ttf');
   font-weight: 300;
+  font-display: swap;
 }
 
 html,

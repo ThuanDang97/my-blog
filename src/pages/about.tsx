@@ -53,7 +53,7 @@ const AboutPage = ({
             1. TO {content.name}
           </Typography>
           <Image
-            src={`https:${content.avatar.fields.file.url}`}
+            src={content.avatar[0].url}
             alt="avatar"
             width={200}
             height={200}

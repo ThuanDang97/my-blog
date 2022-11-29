@@ -615,49 +615,11 @@ export const MOCK_DATA_ABOUT_PAGE = [
     fields: {
       name: 'Thanh Nguyễn',
       blog: 'beautyoncode',
-      avatar: {
-        metadata: {
-          tags: [],
+      avatar: [
+        {
+          url: 'https://images.ctfassets.net/ont2c8ajcvde/2q42Qytnxy63qAgEQgSG67/7ad54dfe423bf8253b7e2094ece12262/avatar.png',
         },
-        sys: {
-          space: {
-            sys: {
-              type: 'Link',
-              linkType: 'Space',
-              id: 'ont2c8ajcvde',
-            },
-          },
-          id: '2q42Qytnxy63qAgEQgSG67',
-          type: 'Asset',
-          createdAt: '2022-11-14T04:13:49.051Z',
-          updatedAt: '2022-11-14T04:13:49.051Z',
-          environment: {
-            sys: {
-              id: 'master',
-              type: 'Link',
-              linkType: 'Environment',
-            },
-          },
-          revision: 1,
-          locale: 'en-US',
-        },
-        fields: {
-          title: 'Avatar',
-          description: '',
-          file: {
-            url: '//images.ctfassets.net/ont2c8ajcvde/2q42Qytnxy63qAgEQgSG67/7ad54dfe423bf8253b7e2094ece12262/avatar.png',
-            details: {
-              size: 7302,
-              image: {
-                width: 200,
-                height: 200,
-              },
-            },
-            fileName: 'avatar.png',
-            contentType: 'image/webp',
-          },
-        },
-      },
+      ],
       introduceYourself: {
         data: {},
         content: [

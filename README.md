@@ -64,19 +64,20 @@
 
 ## **How to install and run app**
 
-| Command                                                     | Action                                             |
-| :---------------------------------------------------------- | :------------------------------------------------- |
-| `git@gitlab.asoft-python.com:thuan.dang/react-training.git` | Clone project from gitlab                          |
-| `git checkout feature/practice-one`                         | Switch to branch feature/practice-one              |
-| `cd react-training/my-blog`                                 | Move to `my-blog` folder                           |
-| `pnpm install`                                              | Installs dependencies                              |
-| `pnpm dev`                                                  | Run dev production at `http://localhost:3000`      |
-| `pnpm build`                                                | Run build for production before start production   |
-| `pnpm start`                                                | Run start on production at `http://localhost:3000` |
-| `pnpm storybook`                                            | Start storybook dev at `http://localhost:6006/`    |
-| `pnpm build-storybook`                                      | build storybook                                    |
-| `pnpm lint`                                                 | run lint-staged check code before commit           |
-| `pnpm prepare`                                              | Install folder .husky                              |
-| `pnpm test`                                                 | Testing application                                |
-| `pnpm test:coverage`                                        | Testing application and get coverage               |
-| deployment                                                  | [my-blog](https://my-blog-bay-seven.vercel.app/)   |
+| Command                                                     | Action                                                                 |
+| :---------------------------------------------------------- | :--------------------------------------------------------------------- |
+| `git@gitlab.asoft-python.com:thuan.dang/react-training.git` | Clone project from gitlab                                              |
+| `git checkout feature/practice-one`                         | Switch to branch feature/practice-one                                  |
+| `cd react-training/my-blog`                                 | Move to `my-blog` folder                                               |
+| `pnpm install`                                              | Installs dependencies                                                  |
+| `pnpm dev`                                                  | Run dev production at `http://localhost:3000`                          |
+| `pnpm build`                                                | Run build for production before start production                       |
+| `pnpm start`                                                | Run start on production at `http://localhost:3000`                     |
+| `pnpm storybook`                                            | Start storybook dev at `http://localhost:6006/`                        |
+| `pnpm build-storybook`                                      | build storybook                                                        |
+| `pnpm lint`                                                 | run lint-staged check code before commit                               |
+| `pnpm prepare`                                              | Install folder .husky                                                  |
+| `pnpm test`                                                 | Testing application                                                    |
+| `pnpm test:coverage`                                        | Testing application and get coverage                                   |
+| deployment                                                  | [my-blog](https://my-blog-bay-seven.vercel.app/)                       |
+| site-map                                                    | [http://localhost:3000/sitemap.xml](http://localhost:3000/sitemap.xml) |
