@@ -2,12 +2,10 @@ import { Document } from '@contentful/rich-text-types'
 
 export interface IContentHome {
   author: string
-  image: {
-    fields: {
-      file: {
-        url: string
-      }
-    }
-  }
+  image: [
+    {
+      url: string
+    },
+  ]
   foreword: Document
 }

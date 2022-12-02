@@ -58,7 +58,9 @@ describe('Navigation Component', () => {
   it('handleOpen should call and open modal search', () => {
     render(<Navigation {...mockProps} />)
 
-    const buttonSearch = screen.getByRole('button')
+    const buttonSearch = screen.getByRole('button', {
+      name: /search/i,
+    })
 
     fireEvent.click(buttonSearch)
 
@@ -68,7 +70,9 @@ describe('Navigation Component', () => {
   it('handleClose should call and close modal search', () => {
     const { container } = render(<Navigation {...mockProps} />)
 
-    const buttonSearch = screen.getByRole('button')
+    const buttonSearch = screen.getByRole('button', {
+      name: /search/i,
+    })
 
     fireEvent.click(buttonSearch)
 
@@ -82,7 +86,9 @@ describe('Navigation Component', () => {
   it('handleGetValue should call and get correct value', () => {
     render(<Navigation {...mockProps} />)
 
-    const buttonSearch = screen.getByRole('button')
+    const buttonSearch = screen.getByRole('button', {
+      name: /search/i,
+    })
 
     fireEvent.click(buttonSearch)
 
@@ -98,7 +104,9 @@ describe('Navigation Component', () => {
   it('handleKeyDown should call and get correct value', () => {
     render(<Navigation {...mockProps} />)
 
-    const buttonSearch = screen.getByRole('button')
+    const buttonSearch = screen.getByRole('button', {
+      name: /search/i,
+    })
 
     fireEvent.click(buttonSearch)
 

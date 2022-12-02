@@ -44,7 +44,10 @@ const Header = ({ pageTitle = 'Title', breadCrumbs = [] }: IHeader) => {
           paddingTop="20px"
           bgcolor={theme.palette.grey[100]}
           sx={{
-            paddingTop: '100px',
+            paddingTop: {
+              xs: '50px',
+              md: '100px',
+            },
           }}
         >
           <Container maxWidth="lg">
@@ -55,9 +58,17 @@ const Header = ({ pageTitle = 'Title', breadCrumbs = [] }: IHeader) => {
               letterSpacing="2px"
               fontWeight={800}
               color={theme.palette.grey[400]}
-              marginTop="40px"
               textTransform="uppercase"
-              fontSize="48px"
+              sx={{
+                fontSize: {
+                  xs: '25px',
+                  md: '48px',
+                },
+                marginTop: {
+                  xs: '20px',
+                  md: '40px',
+                },
+              }}
             >
               {pageTitle}
             </Typography>

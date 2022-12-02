@@ -5,9 +5,11 @@ import Link from 'next/link'
 import { memo } from 'react'
 import { Document } from '@contentful/rich-text-types'
 
+// Utils
+import { options } from '@utils/configOptionsContentful'
+
 export interface ICardPost {
   image: string
-  alt: string
   headerContent: string
   shortContent: Document
   view: string
@@ -16,7 +18,6 @@ export interface ICardPost {
 
 const CardPost = ({
   image,
-  alt,
   headerContent,
   shortContent,
   view,
@@ -29,14 +30,16 @@ const CardPost = ({
       <Box component="figure" marginBottom="15px" overflow="hidden">
         <Image
           src={image}
-          width={1280}
-          height={500}
-          alt={alt}
+          width="1200"
+          height="500"
+          alt={image}
+          quality={40}
+          loading="eager"
+          sizes="(min-width: 600px) 90vw, 60vw"
           style={{
-            maxWidth: '100%',
-            maxHeight: '60%',
+            width: '100%',
+            height: 'auto',
           }}
-          loading="lazy"
         />
         <Box
           padding="40px 40px 20px"
@@ -48,21 +51,37 @@ const CardPost = ({
         >
           <Typography
             variant="h2"
-            fontSize="25px"
             lineHeight="1.5"
             fontWeight={600}
             marginBottom="5px"
+            sx={{
+              fontSize: {
+                xs: '20px',
+                md: '25px',
+              },
+            }}
           >
             <Link href={`/${href}`}>{headerContent}</Link>
           </Typography>
           <Box>
             <Box lineHeight="25px" letterSpacing="0.3px" marginBottom="10px">
-              {documentToReactComponents(shortContent)}
+              {documentToReactComponents(
+                shortContent,
+                options as unknown as undefined,
+              )}
             </Box>
             <Typography marginBottom="10px" fontWeight={600} fontSize="14px">
               {`${view} views`}{' '}
             </Typography>
-            <Typography fontWeight={600} fontSize="16px">
+            <Typography
+              fontWeight={600}
+              sx={{
+                fontSize: {
+                  xs: '14px',
+                  md: '16px',
+                },
+              }}
+            >
               <Link href={`/${href}`}>CONTINUE READING...</Link>
             </Typography>
           </Box>

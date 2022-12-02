@@ -14,7 +14,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint-staged": "lint-staged --config lint-staged.config.js",
-    "prepare": "husky install .husky"
+    "prepare": "cd .. && husky install my-blog/.husky"
   },
   "dependencies": {
     "@builder.io/partytown": "^0.7.1",

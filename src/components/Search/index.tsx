@@ -34,10 +34,15 @@ const Search = ({ isOpen, onClose, onChange, onKeyDown }: ISearch) => {
       <Box
         data-testid="content"
         onClick={preventCloseModal}
-        width="50%"
         bgcolor={theme.palette.common.black}
         padding="15px"
         position="relative"
+        sx={{
+          width: {
+            xs: '90%',
+            md: '50%',
+          },
+        }}
       >
         <SvgIcon
           data-testid="close-icon"

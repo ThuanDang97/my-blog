@@ -1,14 +1,12 @@
 import { Document } from '@contentful/rich-text-types'
 
 export interface IListPost {
-  heroImage: {
-    fields: {
-      file: {
-        url: string
-      }
-      title: string
-    }
-  }
+  heroImage: [
+    {
+      url: string
+      public_id: string
+    },
+  ]
   title: string
   description: Document
   view: string

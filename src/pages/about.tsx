@@ -1,4 +1,4 @@
-import { Box, Container, Typography, useTheme } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Image from 'next/image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
@@ -11,6 +11,7 @@ import { getDataContent } from '@services/restClient'
 
 // Types
 import { IContentAbout } from '@self-types/ContentAbout.types'
+import { options } from '@utils/configOptionsContentful'
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await getDataContent({
@@ -27,8 +28,6 @@ export const getStaticProps: GetStaticProps = async () => {
 const AboutPage = ({
   recipes,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const theme = useTheme()
-
   const contents = recipes.map(
     (item: InferGetStaticPropsType<typeof getStaticProps>) => item.fields,
   )
@@ -37,7 +36,14 @@ const AboutPage = ({
     return contents.map((content: IContentAbout) => (
       <Box component="main" key={content.name}>
         <Box component="section">
-          <Typography variant="h5" marginBottom="20px" fontSize={16}>
+          <Typography
+            variant="h5"
+            marginBottom="20px"
+            fontSize={{
+              xs: '16px',
+              md: '20px',
+            }}
+          >
             {content.description}
           </Typography>
 
@@ -48,7 +54,6 @@ const AboutPage = ({
             fontSize={24}
             fontWeight={700}
             marginBottom="40px"
-            color={theme.palette.primary.light}
           >
             1. TO {content.name}
           </Typography>
@@ -60,7 +65,10 @@ const AboutPage = ({
             loading="eager"
           />
           <Box lineHeight="35px" letterSpacing="0.7px" marginTop={3}>
-            {documentToReactComponents(content.introduceYourself)}
+            {documentToReactComponents(
+              content.introduceYourself,
+              options as unknown as undefined,
+            )}
           </Box>
 
           {/* Information Blog */}
@@ -71,13 +79,15 @@ const AboutPage = ({
             fontWeight={700}
             marginBottom="40px"
             marginTop={5}
-            color={theme.palette.primary.light}
           >
             2. TO {content.blog}
           </Typography>
 
           <Box lineHeight="35px" letterSpacing="0.7px" marginTop={3}>
-            {documentToReactComponents(content.introduceBlog)}
+            {documentToReactComponents(
+              content.introduceBlog,
+              options as unknown as undefined,
+            )}
           </Box>
         </Box>
       </Box>

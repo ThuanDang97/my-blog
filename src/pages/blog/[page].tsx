@@ -88,8 +88,7 @@ const PageBlogList = ({
     return listBlog.map((blog: IListPost) => (
       <CardPost
         key={blog.slug}
-        image={`https:${blog.heroImage.fields.file.url}`}
-        alt={blog.heroImage.fields.title}
+        image={`${blog.heroImage[0].url}`}
         headerContent={blog.title}
         shortContent={blog.description}
         view={blog.view}
@@ -100,7 +99,7 @@ const PageBlogList = ({
 
   const handleGetOlderPosts = () => {
     router.push({
-      pathname: `${DEFAULT_HEADER_URL.BLOG.URL}?page=`,
+      pathname: `${DEFAULT_HEADER_URL.BLOG.URL}`,
       query: {
         page: INDEX_PAGE + 1,
       },
@@ -119,6 +118,10 @@ const PageBlogList = ({
           maxWidth="lg"
           sx={{
             display: 'flex',
+            flexDirection: {
+              xs: 'column',
+              md: 'row',
+            },
           }}
         >
           <Box maxWidth="100%" marginRight="20px">
@@ -151,7 +154,15 @@ const PageBlogList = ({
               </Button>
             </Box>
           </Box>
-          <Box minWidth="25%">
+          <Box
+            minWidth="25%"
+            sx={{
+              marginTop: {
+                xs: '50px',
+                md: '0px',
+              },
+            }}
+          >
             {/* Recent Post */}
             <Widget
               widgetsItem={listBlog.map((blog: IListPost) => {

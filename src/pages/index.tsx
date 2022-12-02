@@ -9,6 +9,7 @@ import { getDataContent } from '@services/restClient'
 
 // Types
 import { IContentHome } from '@self-types/ContentHome.types'
+import { options } from '@utils/configOptionsContentful'
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await getDataContent({
@@ -34,7 +35,7 @@ const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
       <Box component="main" key={content.author}>
         <Box component="section" textAlign="center">
           <Typography
-            variant="h3"
+            variant="h2"
             marginBottom="10px"
             fontSize="28px"
             lineHeight="35px"
@@ -43,7 +44,7 @@ const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
           </Typography>
 
           <Typography
-            variant="h5"
+            variant="h3"
             fontSize="20px"
             lineHeight="28px"
             marginBottom="20px"
@@ -51,7 +52,7 @@ const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
             {`by ${content.author}`}
           </Typography>
           <Image
-            src={`https:${content.image.fields.file.url}`}
+            src={`${content.image[0].url}`}
             alt="avatar"
             width={200}
             height={200}
@@ -73,7 +74,10 @@ const Home = ({ recipes }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 Xin chào!
               </Typography>
               <Box lineHeight="35px" letterSpacing="0.7px">
-                {documentToReactComponents(content.foreword)}
+                {documentToReactComponents(
+                  content.foreword,
+                  options as unknown as undefined,
+                )}
               </Box>
             </Box>
           </Container>

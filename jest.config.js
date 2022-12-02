@@ -16,6 +16,8 @@ module.exports = {
     '!<rootDir>/coverage/**',
     '!<rootDir>/src/types/**',
     '!<rootDir>/src/constants/**',
+    '!<rootDir>/src/utils/sitemap/**',
+    '!<rootDir>/src/pages/sitemap.xml.tsx ',
     '!<rootDir>/src/pages/_documents.tsx',
     '!**/*fileSystem.ts',
   ],

@@ -24,7 +24,7 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
           class="MuiBox-root css-7w1jqr"
         >
           <ul
-            class="MuiList-root MuiList-padding css-1mq3yj5-MuiList-root"
+            class="MuiList-root MuiList-padding css-127t676-MuiList-root"
           >
             <li
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
@@ -73,6 +73,28 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
             </li>
           </ul>
           <button
+            aria-label="menu"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-bxr13g-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="MenuIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-label="search"
             class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-15on3wz-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
@@ -118,24 +140,24 @@ exports[`Home Page Home Page matches DOM Snapshot 1`] = `
         <section
           class="MuiBox-root css-xi606m"
         >
-          <h3
-            class="MuiTypography-root MuiTypography-h3 css-dp2y11-MuiTypography-root"
+          <h2
+            class="MuiTypography-root MuiTypography-h2 css-1rnjj7w-MuiTypography-root"
           >
             Code your life in an elegant way
-          </h3>
-          <h5
-            class="MuiTypography-root MuiTypography-h5 css-12rppva-MuiTypography-root"
+          </h2>
+          <h3
+            class="MuiTypography-root MuiTypography-h3 css-1cke4m1-MuiTypography-root"
           >
             by Thuan Dang
-          </h5>
+          </h3>
           <img
             alt="avatar"
             data-nimg="1"
             decoding="async"
             height="200"
             loading="eager"
-            src="/_next/image?url=https%3Aurl&w=640&q=75"
-            srcset="/_next/image?url=https%3Aurl&w=256&q=75 1x, /_next/image?url=https%3Aurl&w=640&q=75 2x"
+            src="/_next/image?url=https%3A%2F%2Furl&w=640&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Furl&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Furl&w=640&q=75 2x"
             style="color: transparent; border-radius: 103% 103% 103% 103%; margin-bottom: 70px;"
             width="200"
           />

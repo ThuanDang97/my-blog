@@ -24,7 +24,7 @@ exports[`Header layouts should render Header layouts 1`] = `
           class="MuiBox-root css-7w1jqr"
         >
           <ul
-            class="MuiList-root MuiList-padding css-1mq3yj5-MuiList-root"
+            class="MuiList-root MuiList-padding css-127t676-MuiList-root"
           >
             <li
               class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1rk1jkp-MuiListItem-root"
@@ -73,6 +73,28 @@ exports[`Header layouts should render Header layouts 1`] = `
             </li>
           </ul>
           <button
+            aria-label="menu"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-bxr13g-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="MenuIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              />
+            </svg>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            aria-label="search"
             class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-15on3wz-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
@@ -106,7 +128,7 @@ exports[`Header layouts should render Header layouts 1`] = `
       </div>
     </div>
     <div
-      class="MuiBox-root css-8uxnzh"
+      class="MuiBox-root css-fcpxmd"
     >
       <div
         class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
@@ -171,7 +193,7 @@ exports[`Header layouts should render Header layouts 1`] = `
           </ol>
         </nav>
         <h2
-          class="MuiTypography-root MuiTypography-h2 css-zd04td-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h2 css-19qx9ri-MuiTypography-root"
           data-testid="page-title"
         >
           blog
