@@ -21,6 +21,8 @@ import Button from '@components/Button'
 // Types
 import { IPostDetail } from '@self-types/PostDetail.types'
 import { BlogProps } from '@self-types/BlogProps.types'
+
+// Utils
 import { options } from '@utils/configOptionsContentful'
 
 export type TPath = {
@@ -49,10 +51,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({
+  params,
+  preview = false,
+}) => {
   const response = await getDataContent({
     typeContent: 'blogPost',
-    query: { 'fields.slug': `${params?.slug}` },
+    query: { 'fields.slug[in]': `${params?.slug}` },
+    preview,
   })
 
   const [previous, next] = await Promise.all([
@@ -82,7 +88,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   })
 
   return {
-    props: { recipe: postDetail, previous, next },
+    props: {
+      recipe: postDetail,
+      previous,
+      next,
+    },
   }
 }
 

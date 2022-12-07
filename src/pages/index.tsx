@@ -9,6 +9,8 @@ import { getDataContent } from '@services/restClient'
 
 // Types
 import { IContentHome } from '@self-types/ContentHome.types'
+
+// Utils
 import { options } from '@utils/configOptionsContentful'
 
 export const getStaticProps: GetStaticProps = async () => {
