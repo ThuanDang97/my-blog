@@ -27,14 +27,16 @@ export default async function handler(
   // // Enable Preview Mode by setting the cookies
   res.setPreviewData({})
 
-  const url = `http://localhost:3000/${slug}`
+  res.redirect(`/${slug}`)
 
-  res.setHeader('Content-Type', 'text/html')
-  res.write(
-    `<!DOCTYPE html><html><head><meta http-equiv="Refresh" content="0; url=${url}" />
-    <script>window.location.href = '${url}'</script>
-    </head>
-    </html>`,
-  )
-  res.end()
+  // const url = `http://localhost:3000/${slug}`
+
+  // res.setHeader('Content-Type', 'text/html')
+  // res.write(
+  //   `<!DOCTYPE html><html><head><meta http-equiv="Refresh" content="0; url=${url}" />
+  //   <script>window.location.href = '${url}'</script>
+  //   </head>
+  //   </html>`,
+  // )
+  // res.end()
 }
